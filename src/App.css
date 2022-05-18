@@ -1,38 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&family=Shippori+Antique+B1&display=swap");
+
 .App {
-  text-align: center;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+	margin-top: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formControl {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.error {
+	color: red;
+	font-family: "Noto Sans Arabic", sans-serif;
+	font-weight: bold;
+	font-size: 12px;
 }
-
-.App-link {
-  color: #61dafb;
+input + label {
+	margin-top: 10px;
+	margin-right: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.radioControl {
+	display: flex;
+	gap: 20px;
+}
+.checkboxClass {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.checkboxClass input {
+	border-radius: 1rem;
+	border: 1px solid #054e7e;
+	background-color: aquamarine;
+	outline: none;
+}
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="password"],
+select {
+	width: 300px;
+	height: 30px;
+	background-color: #89ebbafb;
+	color: rgb(4, 53, 99);
+	border: 1.5px solid rgba(43, 42, 42, 0.507);
+	padding: 0 5px;
+	font-size: 1rem;
+	outline: none;
+	border-radius: 1rem;
+}
+button {
+	padding: 5px;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid rgb(150, 147, 147);
+	margin-top: 10px;
+}
+button:disabled {
+	cursor: no-drop;
+	color: #6b6b6b;
+}
+input:focus {
+	background: linear-gradient(
+		90deg,
+		rgba(117, 110, 255, 0.24) 45%,
+		rgba(0, 255, 140, 0.336) 100%
+	);
+	color: white;
+	font-weight: 200;
+}
+input:visited {
+	color: red;
+	background-color: blue;
+}
+label {
+	font-family: "Shippori Antique B1";
+	margin-right: 10px;
 }

@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "The Sun",
+      "email": "www.khorshid11@gmail.com",
+      "phoneNumber": "09037922004",
+      "password": "khorshid13#",
+      "passwordConform": "khorshid13#",
+      "gender": "1",
+      "nationality": "IR",
+      "interests": [
+        "React"
+      ],
+      "terms": true
+    }
+  ]
+}
